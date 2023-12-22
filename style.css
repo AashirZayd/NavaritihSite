@@ -1,0 +1,239 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Afacad:wght@500&family=Bebas+Neue&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Spartan", sans-serif;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Global Styles */
+  
+  h1 {
+    font-size: 50px;
+    line-height: 64px;
+    color: #222;
+  }
+  
+  h2 {
+    font-size: 46px;
+    line-height: 54px;
+    color: #222;
+  }
+  
+  h4 {
+    font-size: 20px;
+    color: #222;
+  }
+  
+  h6 {
+    font-weight: 700;
+    font-size: 12px;
+  }
+  
+  p {
+    font-size: 16px;
+    color: #465b52;
+    margin: 15px 0 20px 0;
+  }
+  
+  .section-p1 {
+    padding: 40px 80px;
+  }
+  
+  .section-m1 {
+    margin: 40px 0;
+  }
+
+body{
+    width: 100%;
+}
+
+
+#header{
+    display: flex;
+    align-items: center;
+justify-content: space-between;
+padding: 20px 70px;
+background-color:rgb(255, 255, 255);
+box-shadow: 0 5px 15px rgb(134, 128, 128);
+position: sticky;
+top: 0;
+left: 0;
+}
+
+#header .logo{
+    width: 70px;
+    height: 70px;   
+}
+
+#header .logo:hover{
+  /*  box-shadow: 5px 5px 10px rgb(70, 68, 68); */
+  filter: drop-shadow( 5px 5px 10px color rgb(70, 68, 68)) ;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+
+#navbar li{
+    list-style: none;
+    padding: 0 50px 0px 40px;
+    position: relative;
+
+}
+
+#navbar li a{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(57, 54, 54);
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+    color: rgb(195, 80, 80);
+    transition: 0.5s ease;
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: #465b52;
+    position: absolute;
+    bottom: -4px;
+    left: 40px;
+}
+#hero{
+    background-image: url(img/hero4.png);
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 25% 0;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+}
+
+#hero  h4{
+    padding-bottom: 15px;
+    font-size: 30px;
+}
+#hero  h2{
+    color: blue;
+    font-size: 45px;
+}
+
+#hero p{
+    color: black;
+    font-size: 30px;
+}
+
+footer{
+    background-image: url(img/footer2.jpg);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+} 
+
+footer .logo{
+    margin-bottom: 30px;
+    width: 50px;
+    height: 50px;
+    align-items: center;
+
+}
+
+footer .follow{
+    margin-top: 30px;
+    color: black;
+    
+    cursor: pointer;
+    text-align: center;
+}
+footer .copyright{
+    text-align: center;
+    width: 100%;
+    color: white;
+   
+}
+
+footer .copyright i{
+    font-size: 15px;
+    color: rgb(215, 210, 210);
+    padding: 20px 20px;
+}
+footer .copyright p{
+    font-size: 14px;
+    color: white;
+}
+
+
+#page-header{
+    background-image: url(img/banner.jpg);
+    width: 100%;
+    height: 40vh;
+background-size: cover;
+display: flex;
+justify-content: center;
+text-align: center;
+flex-direction: column;
+padding: 14px;
+}
+
+#page-header h2,
+#page-header p{
+    color: rgb(255, 255, 255);
+}
+
+#about .about-details{
+    background-image: url(img/hero4.png);
+    text-align: center;
+
+}
+
+#about .about-details h4{
+    font-size: 25px;
+}
+
+#about .about-details p{
+    font-size: 20px;
+}
+
+footer .insta{
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    color: white;
+    padding: 20px;
+}
+
+footer .insta h4{
+    font-size: 20px;
+    color: white;
+}
+
+footer .insta p{
+    font-size: 20px;
+    color: white;
+}
+
+footer .insta i{
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    padding: 5px 4px;
+}
